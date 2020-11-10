@@ -86,7 +86,7 @@
 /neuroph/Adapters/target/
 /neuroph/Contrib/target/
 /neuroph/Core/target/
-/neuroh/ImageRec/target/
+/neuroph/ImageRec/target/
 /neuroph/OCR/target/
 /neuroph/Samples/target/
 
@@ -95,13 +95,14 @@
 /neuroph-2.9/Core/nbproject/
 
 # Ignore IDE-specific files and directories
-/*/.idea
-/*/*.iml
-/*/*.class
-/*/.classpath
-/*/.project/
-/*/.project
-/*/.settings/
+**/.idea
+**/*.iml
+**/*.class
+**/.classpath
+**/.project/
+**/.project
+**/.settings/
 
 # Ignore compiled files
-/*/*.nnet
+**/*.nnet
+
