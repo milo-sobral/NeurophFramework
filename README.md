@@ -43,7 +43,7 @@ Note: Any IDE can be used for this project. If you wish to use a different IDE, 
 Getting and Building from Sources using command line
 ======
 
-### `git clone  https://github.com/neuroph/NeurophFramework.git1`
+### `git clone  https://github.com/neuroph/NeurophFramework.git`
 ### `cd neuroph`
 
 To compile the project
