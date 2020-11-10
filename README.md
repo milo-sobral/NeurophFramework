@@ -32,20 +32,30 @@ Getting and Building from Sources using NetBeans
 
 Click: Main Menu > Team > Git > Clone
 
-For Repository URL enter https://github.com/neuroph/NeurophFramework.git
+For Repository URL, enter: https://github.com/neuroph/NeurophFramework.git
 
-Click Finish
+Click: Finish
 
-Right click cloned project, and click Build
+Right click "cloned project", and click "Build"
+
+Note: Any IDE can be used for this project. If you wish to use a different IDE, please refer to that IDE's documentation for instructions on how to get and build from sources from a Git repository.
 
 Getting and Building from Sources using command line
 ======
 
-git clone  https://github.com/neuroph/NeurophFramework.git
+### `git clone  https://github.com/neuroph/NeurophFramework.git1`
+### `cd neuroph`
 
-cd neuroph
+To compile the project
+### `mvn compile`
 
-mvn
+To run unit tests
+### `mvn test`
 
+To run integration tests
+### `mvn verify`
+
+To compile, test, and package the project
+### `mvn package`
 
 
