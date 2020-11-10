@@ -81,16 +81,27 @@
 /NeurophStudio/NeurophExplorer/nbproject/private/
 /NeurophStudio/LicencePLateRecognition/nbproject/private/
 
+# Ignore target directories
+/target/
+/neuroph/Adapters/target/
+/neuroph/Contrib/target/
+/neuroph/Core/target/
+/neuroh/ImageRec/target/
+/neuroph/OCR/target/
+/neuroph/Samples/target/
+
 # Ignore miscellaneous directories
 /NeurophStudio/dist/
 /neuroph-2.9/Core/nbproject/
-/target/
-
 
 # Ignore IDE-specific files and directories
-*/.idea
-*/*.iml
-*/.classpath
-*/.project/
-*/.project
-*/.settings/
+/*/.idea
+/*/*.iml
+/*/*.class
+/*/.classpath
+/*/.project/
+/*/.project
+/*/.settings/
+
+# Ignore compiled files
+/*/*.nnet
