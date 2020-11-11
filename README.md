@@ -1,3 +1,6 @@
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/milo-sobral/NeurophFramework)
+![GitHub issues](https://img.shields.io/github/issues/milo-sobral/NeurophFramework)
+
 Neuroph - Java Neural Network Framework
 ======
 
