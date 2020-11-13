@@ -7,11 +7,16 @@
       <artifactId>Neuroph</artifactId>
       <version>2.98</version>
    </parent>
-   
    <artifactId>neuroph-samples</artifactId>
    <packaging>jar</packaging>
 
    <name>Samples</name>
+
+   <properties>
+      <powermock.version>1.5.4</powermock.version>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
 
    <dependencies>
       <dependency>
@@ -27,9 +32,10 @@
          <type>jar</type>
       </dependency>
       <dependency>
-         <groupId>org.neuroph</groupId>
+         <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-contrib</artifactId>
          <version>${parent.version}</version>
+         <type>jar</type>
       </dependency>
       <dependency>
          <groupId>org.slf4j</groupId>
@@ -38,9 +44,9 @@
          <type>jar</type>
       </dependency>
       <dependency>
-         <groupId>com.github.neuroph</groupId>
+         <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-imgrec</artifactId>
-         <version>2.98</version>
+         <version>${parent.version}</version>
          <type>jar</type>
       </dependency>
    </dependencies>
