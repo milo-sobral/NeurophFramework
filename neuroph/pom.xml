@@ -4,7 +4,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.github.neuroph</groupId>
    <artifactId>Neuroph</artifactId>
-   <version>2.98</version>
+   <version>2.98-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <name>Neuroph</name>
@@ -15,6 +15,10 @@
       <module>OCR</module>
       <module>Contrib</module>
    </modules>
+
+   <scm>
+      <developerConnection>scm:git:git://github.com/milo-sobral/NeurophFramework</developerConnection>
+   </scm>
 
    <organization>
       <name>Neuroph Project</name>
@@ -64,7 +68,7 @@
             </snapshots>
         </repository>
     </repositories>
-    
+
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -74,7 +78,7 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
-    </distributionManagement>    
+    </distributionManagement>
 
    <build>
       <plugins>
@@ -103,6 +107,11 @@
                   </goals>
                </execution>
             </executions>
+         </plugin>
+         <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-release-plugin</artifactId>
+           <version>3.0.0-M1</version>
          </plugin>
       </plugins>
    </build>
