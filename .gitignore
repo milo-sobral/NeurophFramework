@@ -106,3 +106,7 @@
 # Ignore compiled files
 **/*.nnet
 
+# Ignore release files
+*.releaseBackup
+*.tag
+/neuroph/release.properties
