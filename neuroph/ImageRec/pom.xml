@@ -16,7 +16,7 @@
       <dependency>
          <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-core</artifactId>
-         <version>${parent.version}</version>
+         <version>${project.version}</version>
       </dependency>
       <dependency>
     	<groupId>com.google.android</groupId>

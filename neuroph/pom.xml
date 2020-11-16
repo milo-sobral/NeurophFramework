@@ -40,7 +40,6 @@
       <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
       <encoding>UTF-8</encoding>
       <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
-      <parent.version>2.98</parent.version>
    </properties>
 
     <pluginRepositories>
