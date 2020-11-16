@@ -100,7 +100,7 @@
             <version>2.10.3</version>
             <configuration>
                 <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-            </configuration>      
+            </configuration>
             <executions>
                <execution>
                   <id>attach-javadocs</id>
@@ -118,6 +118,24 @@
                 <tagBase>https://github.com/milo-sobral/NeurophFramework/tags</tagBase>
             </configuration>
          </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>copy-dependencies</id>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>copy-dependencies</goal>
+                    </goals>
+                    <configuration>
+                        <overWriteReleases>false</overWriteReleases>
+                        <overWriteSnapshots>false</overWriteSnapshots>
+                        <overWriteIfNewer>true</overWriteIfNewer>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
       </plugins>
    </build>
 </project>
