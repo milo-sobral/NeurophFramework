@@ -45,7 +45,7 @@ If you you are interested in joining the development, or contributing in any oth
 
 ### What are neural networks and what can they be used for?
 
-According to *The Biological Paradigm* by R. Rojas (http://page.mi.fu-berlin.de/rojas/neural/chapter/K1.pdf), Artificial neural networks, also known as neural networks, are "an attempt at modeling the information processing capabilities of nervous systems" or animals. 
+According to *The Biological Paradigm* by R. Rojas (http://page.mi.fu-berlin.de/rojas/neural/chapter/K1.pdf), artificial neural networks, also known as neural networks, are "an attempt at modeling the information processing capabilities of nervous systems" or animals. 
 Neural networks can be used for various tasks like classification, recognition, prediction, function approximation, and modelling. Typical tasks are image, fingerprint or face recognition, stock prediction, pattern classification etc.
 
 ### Requirements to use Neuroph
