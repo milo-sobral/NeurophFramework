@@ -24,7 +24,10 @@ os.system('/bin/bash -c "mvn clean package"')
 os.system('/bin/bash -c "mvn javadoc:jar"')
 os.system('/bin/bash -c "mvn javadoc:aggregate"')
 os.system('/bin/bash -c "mvn dependency:copy-dependencies"')
+os.system('/bin/bash -c "mvn release:clean release:prepare"')
+#os.system('/bin/bash -c "mvn release:perform"')
 
+# Copy all the files into the release folder to get the release package ready
 lib_path = release_folder / "lib
 lib_path.mkdir()
 shutil.copyfile(, release_folder / "lib")
