@@ -24,12 +24,12 @@ Neuroph started as a graduate thesis project, after that a part of master theses
 
 Our vision is to create neural network framework which is:
 
-1. `Small`, `intuitive`, `easy` to learn and use (even for the beginners in this area).
-2. `Flexible`, so it can be easily extended for specific purporse with high level of reusability
-3. `Well documented` (in our view if some features are not documented, it's almost as they dont exist at all)
-4. `Ready to use`, providing out of the box functionality
-5. `Equiped with tools` for typical tasks during neural network development such as creating, training, testing and deploying (see Neuroph editor easyNeurones)
-6. `Fun` to use
+1. **Small**, **intuitive**, **easy** to learn and use (even for the beginners in this area).
+2. **Flexible**, so it can be easily extended for specific purporse with high level of reusability
+3. **Well documented** (in our view if some features are not documented, it's almost as they dont exist at all)
+4. **Ready to use**, providing out of the box functionality
+5. **Equiped with tools** for typical tasks during neural network development such as creating, training, testing and deploying (see Neuroph editor easyNeurones)
+6. **Fun** to use
 
 ### Contributors
 
@@ -109,8 +109,10 @@ To run integration tests
 To compile, test, and package the project
 #### `mvn package`
 
-How to contribute
+Contributing to Neuroph
 ======
+
+*For thechnical details about how to contribute to the GitHub repository, please refer to the CONTRIBUTING.md file*
 
 ### Ways to contribute
 
@@ -144,7 +146,7 @@ If you would like to suggest an improvement or point out a bug in this repositor
 
 ### Developer Guidelines
 
-###### Here are some guidelines for developers which will help us to manage the project, and keep the quality of code and documentation:
+###### Guidelines for developers which will help us to manage the project, and keep the quality of code and documentation:
 1. Please do not put anything in core and nnet packages, instead use something like org.neuroph.contrib.yourpackage
 After review and testing when that code become stable, it may be moved to some more appropriate package.
 2. Please put comments for classes and methods in your code so javadoc can generate documentation.
