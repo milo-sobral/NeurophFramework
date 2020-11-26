@@ -10,7 +10,7 @@ You will find more information about the project as well as technical documentat
 
 ### What is Neuroph?
 
-Neuroph is an open source Java neural network framework and Development Environment for neural networks, and it is free to use. It can be used to create neurl networks and to easily add neural networks to your programs, or just to experiment with neural networks.
+Neuroph is an open source Java neural network framework and Development Environment for neural networks, and it is free to use. It can be used to create neural networks and to easily add neural networks to your programs, or just to experiment with neural networks.
 
 Neuroph contains well designed, open source Java library with small number of basic classes which correspond to basic NN concepts, which makes it perfect for beginners and education. Also, it provides nice GUI neural network editor and wizards to quickly create Java neural network components, along with various visualization tools. 
 
@@ -43,10 +43,10 @@ Neuroph has been created thanks to the support provided by the following people:
 
 If you you are interested in joining the development, or contributing in any other way, feel free to contact us at sevarac@gmail.com. If you have developed something based on Neuroph and you wish to share that with others, send us your code.
 
-### What can neural networks be used for?
+### What are neural networks and what can they be used for?
 
-Neural networks can be used for various tasks like classification, recognition, prediction, function approximation, and modelling.
-Typical tasks are image, fingerprint or face recognition, stock prediction, pattern classification etc.
+According to *The Biological Paradigm* by R. Rojas (http://page.mi.fu-berlin.de/rojas/neural/chapter/K1.pdf), Artificial neural networks, also known as neural networks, are "an attempt at modeling the information processing capabilities of nervous systems" or animals. 
+Neural networks can be used for various tasks like classification, recognition, prediction, function approximation, and modelling. Typical tasks are image, fingerprint or face recognition, stock prediction, pattern classification etc.
 
 ### Requirements to use Neuroph
 
