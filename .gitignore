@@ -110,3 +110,4 @@
 *.releaseBackup
 *.tag
 /neuroph/release.properties
+/neuroph/target
