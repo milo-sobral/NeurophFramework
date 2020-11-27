@@ -17,7 +17,7 @@
    </modules>
 
    <scm>
-      <developerConnection>scm:git:git://github.com/milo-sobral/NeurophFramework</developerConnection>
+      <developerConnection>scm:git:https://github.com/milo-sobral/NeurophFramework</developerConnection>
    </scm>
 
    <organization>
