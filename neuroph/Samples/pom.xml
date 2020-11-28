@@ -28,13 +28,13 @@
       <dependency>
          <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-core</artifactId>
-         <version>${parent.version}</version>
+         <version>${project.version}</version>
          <type>jar</type>
       </dependency>
       <dependency>
          <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-contrib</artifactId>
-         <version>${parent.version}</version>
+         <version>${project.version}</version>
          <type>jar</type>
       </dependency>
       <dependency>
@@ -46,7 +46,7 @@
       <dependency>
          <groupId>${project.groupId}</groupId>
          <artifactId>neuroph-imgrec</artifactId>
-         <version>${parent.version}</version>
+         <version>${project.version}</version>
          <type>jar</type>
       </dependency>
    </dependencies>
