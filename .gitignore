@@ -82,7 +82,6 @@
 /NeurophStudio/LicencePLateRecognition/nbproject/private/
 
 # Ignore target directories
-/target/
 /neuroph/Adapters/target/
 /neuroph/Contrib/target/
 /neuroph/Core/target/
@@ -111,3 +110,5 @@
 *.tag
 /neuroph/release.properties
 /neuroph/target
+
+neuroph/dirTest/
