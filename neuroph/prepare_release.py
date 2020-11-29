@@ -18,16 +18,43 @@ if release_folder.is_dir() and any(release_folder.iterdir()) :
     print("Directory specified already exists and is not empty")
     exit()
 
-file.mkdir(exist_ok=True)
+release_folder.mkdir(exist_ok=True)
 
 os.system('/bin/bash -c "mvn clean package"')
 os.system('/bin/bash -c "mvn javadoc:jar"')
 os.system('/bin/bash -c "mvn javadoc:aggregate"')
 os.system('/bin/bash -c "mvn dependency:copy-dependencies"')
 os.system('/bin/bash -c "mvn release:clean release:prepare"')
-#os.system('/bin/bash -c "mvn release:perform"')
+os.system('/bin/bash -c "mvn release:perform"')
 
-# Copy all the files into the release folder to get the release package ready
-lib_path = release_folder / "lib
-lib_path.mkdir()
-shutil.copyfile(, release_folder / "lib")
+srcdir = "./Core/target"
+for basename in os.listdir(srcdir):
+    if basename.endswith('.jar'):
+        pathname = os.path.join(srcdir, basename)
+        if os.path.isfile(pathname):
+            shutil.copy2(pathname, release_folder)
+
+srcdir = "./Contrib/target"
+for basename in os.listdir(srcdir):
+    if basename.endswith('.jar'):
+        pathname = os.path.join(srcdir, basename)
+        if os.path.isfile(pathname):
+            shutil.copy2(pathname, release_folder)
+
+srcdir = "./ImageRec/target"
+for basename in os.listdir(srcdir):
+    if basename.endswith('.jar'):
+        pathname = os.path.join(srcdir, basename)
+        if os.path.isfile(pathname):
+            shutil.copy2(pathname, release_folder)
+
+srcdir = "./OCR/target"
+for basename in os.listdir(srcdir):
+    if basename.endswith('.jar'):
+        pathname = os.path.join(srcdir, basename)
+        if os.path.isfile(pathname):
+            shutil.copy2(pathname, release_folder)
+
+srcdir = "./target/site/apidocs"
+shutil.copytree(srcdir, os.path.join(release_folder, "apidocs"), False, None)
+shutil.make_archive(os.path.join(release_folder, "apidocs"), 'zip', os.path.join(release_folder, "apidocs"))
