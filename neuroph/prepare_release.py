@@ -20,12 +20,12 @@ if release_folder.is_dir() and any(release_folder.iterdir()) :
 
 release_folder.mkdir(exist_ok=True)
 
+os.system('/bin/bash -c "mvn release:clean release:prepare"')
+os.system('/bin/bash -c "mvn release:perform"')
 os.system('/bin/bash -c "mvn clean package"')
 os.system('/bin/bash -c "mvn javadoc:jar"')
 os.system('/bin/bash -c "mvn javadoc:aggregate"')
 os.system('/bin/bash -c "mvn dependency:copy-dependencies"')
-os.system('/bin/bash -c "mvn release:clean release:prepare"')
-os.system('/bin/bash -c "mvn release:perform"')
 
 srcdir = "./Core/target"
 for basename in os.listdir(srcdir):
