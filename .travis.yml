@@ -4,10 +4,6 @@ sudo: false
 
 install: true
 
-branches:
-    only:
-    - master
-
 before_script: cd neuroph
 
 script:
