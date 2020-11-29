@@ -1,6 +1,7 @@
 Neuroph - Java Neural Network Framework
 ======
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/milo-sobral/NeurophFramework)
+![](https://travis-ci.com/milo-sobral/NeurophFramework.svg?branch=master)
 
 ### The official website for the project
 
