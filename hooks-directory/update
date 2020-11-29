@@ -1,0 +1,14 @@
+#! /bin/sh
+
+#Branch reference 
+production_branch='refs/heads/production'
+read refname
+
+#Extract branch reference being pushed to
+currentref=$(echo $refname | cut -d ' ' -f3)
+
+if [[ $currentref != $protected_branch ]] && [[ $currentref != $; then
+	exit 0
+fi
+echo "ERROR:  you are not allowed to push directly to the 'production' branch." >&2
+exit 1
