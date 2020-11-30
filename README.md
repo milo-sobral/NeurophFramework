@@ -173,4 +173,5 @@ An implication of this policy is that there are 2 places in SVN that contributor
 
 
 GitFlow Cheat Sheet:
-[img]https://i.imgur.com/R53D42x.png[/img]
+![](https://i.imgur.com/R53D42x.png)
+![](https://i.imgur.com/aCOqsXd.png)
