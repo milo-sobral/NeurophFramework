@@ -169,6 +169,8 @@ After review and testing when that code become stable, it may be moved to some m
         f) If an issue in master is detected a hotfix branch is created from master
 
         g) Once the hotfix is complete it is merged to both develop and master
+        
+7. Please add the pre-receive hook that can be found in the <em>hooks-directory</em> to the <em>.git/hooks</em> folder in your local repository. This will allow for stricter adherence to branch naming conventions and protecting branches. 
 
 
 Please find the link to the GitFlow extensions [here](https://github.com/nvie/gitflow) which will allow for a simplified adherence to GitFlow conventions.
