@@ -171,7 +171,7 @@ After review and testing when that code become stable, it may be moved to some m
         g) Once the hotfix is complete it is merged to both develop and master
 
 
-Please find the link to the GitFlow extensions [here](https://github.com/nvie/gitflow).
+Please find the link to the GitFlow extensions [here](https://github.com/nvie/gitflow) which will allow for a simplified adherence to GitFlow conventions.
 
 
 ###### SVN
