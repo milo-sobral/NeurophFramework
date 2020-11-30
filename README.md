@@ -155,13 +155,13 @@ After review and testing when that code become stable, it may be moved to some m
 4. Prefered tool for any GUI related development is NetBeans
 5. Please follow the [Java coding conventions](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) and [Javadoc comments style recommendations](https://www.oracle.com/java/technologies/)
 6. Please follow the GitFlow workflow branching strategy when contributing to this repository, which operates as follows:
-a. A develop branch is created from master
-b. A release branch is created from develop
-c. Feature branches are created from develop
-d. When a feature is complete it is merged into the develop branch
-e. When the release branch is done it is merged into develop and master
-f. If an issue in master is detected a hotfix branch is created from master
-g. Once the hotfix is complete it is merged to both develop and master
+a) A develop branch is created from master
+b) A release branch is created from develop
+c) Feature branches are created from develop
+d) When a feature is complete it is merged into the develop branch
+e) When the release branch is done it is merged into develop and master
+f) If an issue in master is detected a hotfix branch is created from master
+g) Once the hotfix is complete it is merged to both develop and master
 
 Please find the link to the GitFlow extensions [here](https://github.com/nvie/gitflow).
 
@@ -181,10 +181,5 @@ The suggested policy for the Neuroph team to adopt is that all current code modi
 Official releases are created by branching HEAD and naming the branch with a version number. The branch becomes a "release candidate" until it passes whatever testing the contributors need to do. Once branched, the release candidate should only receive bug-fixes and stability patches. No new development code should be committed there.
 
 An implication of this policy is that there are 2 places in SVN that contributors are concerned with: HEAD, and the current release candidate branch. There should only be one "active" release candidate branch at a time. Any contributor who is working on "silo'ed" code in a branch should merge their work into HEAD and abandon their branch.
-
-
-###### The overall flow of GitFlow is as follows:
-
-The overall flow of Gitflow is:
 
 
