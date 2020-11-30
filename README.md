@@ -170,3 +170,7 @@ The suggested policy for the Neuroph team to adopt is that all current code modi
 Official releases are created by branching HEAD and naming the branch with a version number. The branch becomes a "release candidate" until it passes whatever testing the contributors need to do. Once branched, the release candidate should only receive bug-fixes and stability patches. No new development code should be committed there.
 
 An implication of this policy is that there are 2 places in SVN that contributors are concerned with: HEAD, and the current release candidate branch. There should only be one "active" release candidate branch at a time. Any contributor who is working on "silo'ed" code in a branch should merge their work into HEAD and abandon their branch.
+
+
+GitFlow Cheat Sheet:
+[img]https://i.imgur.com/R53D42x.png[/img]
