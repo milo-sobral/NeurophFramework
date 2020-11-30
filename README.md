@@ -172,6 +172,8 @@ Official releases are created by branching HEAD and naming the branch with a ver
 An implication of this policy is that there are 2 places in SVN that contributors are concerned with: HEAD, and the current release candidate branch. There should only be one "active" release candidate branch at a time. Any contributor who is working on "silo'ed" code in a branch should merge their work into HEAD and abandon their branch.
 
 
-GitFlow Cheat Sheet:
+###### GitFlow Cheat Sheet:
+
+
 ![](https://i.imgur.com/R53D42x.png)
 ![](https://i.imgur.com/aCOqsXd.png)
