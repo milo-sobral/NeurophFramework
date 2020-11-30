@@ -1,16 +1,22 @@
-#!/usr/bin/env bash
-LC_ALL=C
+#!/usr/bin/env python3
 
-local_branch=$(echo $refname | cut -d ' ' -f3)
+import sys
+import fileinput
+import os
 
-valid_branch_regex="^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/[a-z0-9._-]+$"
+# take in input (loop required by python but will only run once because one line of input to this hook)
+for refs_input in fileinput.input():
+    branch_ref = refs_input.split(" ")[2].strip()
+    branch_ref_name = branch_ref.split("/")[2].strip()
 
-message="There is something wrong with your branch name. Branch names in this project must adhere to this contract: $valid_branch_regex. Your commit will be rejected. You should rename your branch to a valid name and try again."
+    branch_ref_valid = branch_ref_name.startswith('feature/') or branch_ref_name.startswith('bugfix/') or branch_ref_name.startswith('hotfix/')
 
-if [[ ! $local_branch =~ $valid_branch_regex ]]
-then
-    echo "$message"
-    exit 1
-fi
+		message = ""
 
-exit 0
+    if branch_ref_valid is False:
+        print(message)
+        sys.exit(1)
+
+    break
+
+sys.exit(0)
