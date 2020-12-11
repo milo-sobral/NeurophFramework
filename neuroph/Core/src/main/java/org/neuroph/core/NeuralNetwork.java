@@ -148,7 +148,7 @@ public class NeuralNetwork<L extends LearningRule> implements Serializable {
 
         // in case of null value throw exception to prevent adding null layers
         if (layer == null) {
-            throw new IllegalArgumentException("Layer cant be null!");
+            throw new IllegalArgumentException("Layer can't be null!");
         }
 
         // if layer position is negative also throw exception
